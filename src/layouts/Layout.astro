@@ -12,7 +12,7 @@ const { description, title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		
 		<title>Astro Basics</title>
 	</head>
@@ -29,10 +29,31 @@ const { description, title } = Astro.props;
 	--accent-gradient: linear-gradient(45 deg, rgb(var(var(--accent))), rgb(var(var(--accent-light)) 30%, white 60%);
 	);
 }
-	html,
+	html {
+		font-family: system-ui, sans-serif;
+		background: #151a36;
+	}
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
 	}
+	p {
+		color:rgb(255, 255, 255);
+		line-height: 1.4;
+		margin-bottom: 1em;
+		font-weight: 100;
+		font-size:1em;
+		letter-spacing:  .5px;
+		
+	}
+	p strong {
+		color: rgb(255, 255, 255);
+		font-weight: 700;
+	}
+
+	h1 {
+		color: white
+	}
+
 </style>

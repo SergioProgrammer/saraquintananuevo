@@ -1,0 +1,101 @@
+<section id="contacto" class="contact">
+    <div class="container">
+        <h1>Contacto</h1>
+        <form action="https://formsubmit.co/d630ea39113cdff2502ba7fb6704d741" method="POST">
+            <label for="name">
+                <h1>Nombre</h1>
+            </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">
+                <h1>Email</h1>
+            </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">
+                <h1>Mensaje</h1>
+            </label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+
+            <input type="hidden" name="_next" value="https://saraquintana.info/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+</section>
+
+<style>
+/* Centrar la sección de contacto */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+/* Contenedor del formulario centrado */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Limita el tamaño máximo del contenedor */
+}
+
+/* Estilos para los títulos */
+.contact h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Estilo de los labels */
+.contact label {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+/* Estilo de los inputs y textarea */
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    font-size: 1em;
+    width: 100%; /* Asegura que los campos ocupen el 100% del contenedor */
+}
+
+/* Estilo para el botón */
+.contact button {
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* El ancho del botón se ajustará al contenido */
+    white-space: nowrap;
+}
+
+/* Añadir un poco de espacio entre los campos y el botón */
+.contact button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+</style>

@@ -3,10 +3,11 @@ import BentoItem from '../components/BentoItem.astro';
 ---
 
 <section
-    class="{'w-full max-w-[1400px]
-    grid grid-cols-10 auto-rows-[35rem] gap-4
-    mx-auto p-20
-    '}"
+    class={`
+        w-full max-w-[1400px]
+        grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+        mx-auto p-6 md:p-12 lg:p-20
+     `}
     >
     <BentoItem 
         class="col-span-10 md:col-span-4" 
@@ -15,8 +16,8 @@ import BentoItem from '../components/BentoItem.astro';
         <div
             slot="image"
             class="absolute left-0 top-0 bottom-0  w-full h-full
-                group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
-                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+             group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
+             ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
             style="background-image: url('/revista.png')">
         </div>
             

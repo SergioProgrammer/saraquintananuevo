@@ -8,8 +8,68 @@ import BentoItem from '../components/BentoItem.astro';
     mx-auto p-20
     '}"
     >
-    <BentoItem class="col-span-10 md:col-span-4" title="SaraQuintana: La clave para diferenciarte"/>
-    <BentoItem class="col-span-10 md:col-span-6" title="Nueva era de la comunicación" subtitle="Diseño web"/>
-    <BentoItem class="col-span-10 md:col-span-6" title="Profesionales especializados" subtitle="Este año, es el momento de dar ese cambio que llevan tiempo pidiendote"/>
-    <BentoItem class="col-span-10 md:col-span-4" title="Este año, es el momento de dar ese cambio que llevan tiempo pidiendote"/>
+    <BentoItem 
+        class="col-span-10 md:col-span-4" 
+        title="SaraQuintana: La clave para diferenciarte">
+
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0  w-full h-full
+                group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
+                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+            style="background-image: url('/banner.webp')">
+        </div>
+            
+         
+        <p slot="content" class="max-w-xl">
+            Un proyecto que empezó en <strong>2023</strong> 
+            ya es parte de muchas entidades que han confiado 
+            en nosotros para dar <strong>vida a sus proyectos</strong>",
+        </p>
+    </BentoItem>
+
+    <BentoItem 
+        class="col-span-10 md:col-span-6" 
+        title="Nueva era de la comunicación" 
+        subtitle="Diseño web">
+
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0  w-full h-full
+            group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
+            ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+             style="background-image: url('/banner.webp')">
+        </div>
+
+    </BentoItem>
+
+    <BentoItem 
+        class="col-span-10 md:col-span-6" 
+        title="Profesionales especializados" 
+        subtitle="Este año, es el momento de dar ese cambio que llevan tiempo pidiendote">
+
+        <div
+            slot="image"
+             class="absolute left-0 top-0 bottom-0  w-full h-full
+              group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
+              ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+              style="background-image: url('/banner.webp')">
+         </div>
+
+    </BentoItem>
+
+    <BentoItem 
+        class="col-span-10 md:col-span-4" 
+        title="Este año, es el momento de dar ese cambio que llevan tiempo pidiendote">
+
+        <div
+            slot="image"
+            class="absolute left-0 top-0 bottom-0  w-full h-full
+            group-hover:scale-110 transition-scale duration-1000 bg-blend-luminosity
+            ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+             style="background-image: url('/banner.webp')">
+        </div>
+
+    </BentoItem>
+
 </section>
